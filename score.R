@@ -124,6 +124,8 @@ scoreMCQ <- function(localMCQdata) {
     
     if (tempColName != allColNames[i+1]) {
       stop("Columns are incorrectly named and/or ordered.")
+    } else if (mcqLocal[i,tempColName] != 1 && mcqLocal[i,tempColName] != 2) {
+      stop("Entries must be a 1 or 2.")
     }
   }  
 
