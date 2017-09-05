@@ -20,7 +20,7 @@ load("Gray.RData")
 #' ...
 #'
 #' @param localPDQdata 
-#' @author Josh Gray <jgray7700@gmail.com>
+#' @author Josh Gray <jgray7700@gmail.com>, Shawn Gilroy <shawn.gilroy@temple.edu>
 #' @return Scored PDQ questionairre
 #' @examples
 #' res <- scorePDQ(PDQdata)
@@ -103,7 +103,7 @@ scorePDQ <- function(localPDQdata) {
 #' ...
 #'
 #' @param localMCQdata 
-#' @author Josh Gray <jgray7700@gmail.com>
+#' @author Josh Gray <jgray7700@gmail.com>, Shawn Gilroy <shawn.gilroy@temple.edu>
 #' @return Scored MCQ questionairre
 #' @examples
 #' res <- scoreMCQ(MCQdata)
