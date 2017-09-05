@@ -19,11 +19,11 @@ load("Gray.RData")
 #'
 #' ...
 #'
-#' @param localPDQdata nls.lm fitted model
+#' @param localPDQdata 
 #' @author Josh Gray <jgray7700@gmail.com>
 #' @return Scored PDQ questionairre
 #' @examples
-#' res <- scorePDQ(MCQdata)
+#' res <- scorePDQ(PDQdata)
 #' @export
 scorePDQ <- function(localPDQdata) {
   pdqLocal = localPDQdata
@@ -102,14 +102,14 @@ scorePDQ <- function(localPDQdata) {
 #'
 #' ...
 #'
-#' @param localPDQdata nls.lm fitted model
+#' @param localMCQdata 
 #' @author Josh Gray <jgray7700@gmail.com>
 #' @return Scored MCQ questionairre
 #' @examples
 #' res <- scoreMCQ(MCQdata)
 #' @export
-scoreMCQ <- function(localPDQdata) {
-  mcqLocal = localPDQdata
+scoreMCQ <- function(localMCQdata) {
+  mcqLocal = localMCQdata
   
   if (ncol(mcqLocal) != 28) {
     stop("incorrect # of columns. Please lists as IDcol, PDQ1, PDQ2, ...")
