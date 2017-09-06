@@ -12,16 +12,17 @@
 #    You should have received a copy of the GNU General Public License
 #    along with MCQPDQScoringScripts.  If not, see <http://www.gnu.org/licenses/gpl-2.0.html>.
 #
+#    For more information about the output of the syntax please see (also please cite): Gray, J. C., Amlung, M. T., Palmer, A. A., & MacKillop, J. (2016). Syntax for calculation of discounting indices from the monetary choice questionnaire and probability discounting questionnaire: Syntax for MCQ and PDQ. Journal of the Experimental Analysis of Behavior, 106(2), 156–163. doi: 10.1002/jeab.221
 
 load("Gray.RData")
 
-#' PDQ Scoring algorithm
+#' PDQ scoring algorithm
 #'
-#' ...
+#' The PDQ is from: Madden, G. J., Petry, N. M., & Johnson, P. S. (2009). Pathological gamblers discount probabilistic rewards less steeply than matched controls. Experimental and Clinical Psychopharmacology, 17(5), 283-290. doi: 10.1037/a0016806
 #'
 #' @param localPDQdata 
-#' @author Josh Gray <jgray7700@gmail.com>, Shawn Gilroy <shawn.gilroy@temple.edu>
-#' @return Scored PDQ questionairre
+#' @author Joshua Gray <jgray7700@gmail.com>, Shawn Gilroy <shawn.gilroy@temple.edu>
+#' @return Scored PDQ
 #' @examples
 #' res <- scorePDQ(PDQdata)
 #' @export
@@ -29,7 +30,7 @@ scorePDQ <- function(localPDQdata) {
   pdqLocal = localPDQdata
   
   if (ncol(pdqLocal) != 31) {
-    stop("incorrect # of columns. Please lists as IDcol, PDQ1, PDQ2, ...")
+    stop("incorrect # of columns. Please list as IDcol, PDQ1, PDQ2, ...")
   }
   
   allColNames <- colnames(pdqLocal)
@@ -102,11 +103,11 @@ scorePDQ <- function(localPDQdata) {
 
 #' MCQ Scoring algorithm
 #'
-#' ...
+#' The MCQ measure is from: Kirby, K. N., Petry, N. M., & Bickel, W. K. (1999). Heroin addicts have higher discount rates for delayed rewards than non-drug-using controls. Journal of Experimental Psychology: General, 128(1), 78-87. doi: 10.1037/0096-3445.128.1.78
 #'
 #' @param localMCQdata 
-#' @author Josh Gray <jgray7700@gmail.com>, Shawn Gilroy <shawn.gilroy@temple.edu>
-#' @return Scored MCQ questionairre
+#' @author Joshua Gray <jgray7700@gmail.com>, Shawn Gilroy <shawn.gilroy@temple.edu>
+#' @return Scored MCQ
 #' @examples
 #' res <- scoreMCQ(MCQdata)
 #' @export
@@ -114,7 +115,7 @@ scoreMCQ <- function(localMCQdata) {
   mcqLocal = localMCQdata
   
   if (ncol(mcqLocal) != 28) {
-    stop("incorrect # of columns. Please lists as IDcol, PDQ1, PDQ2, ...")
+    stop("incorrect # of columns. Please list as IDcol, MCQ1, MCQ2, ...")
   }
   
   allColNames <- colnames(mcqLocal)
