@@ -8,8 +8,8 @@ Scoring scripts for the MCQ and PDQ
  * 1.0.0.0
 
 ### Referenced Works (academic works)
-These methods are based on the following academic works:
-* Gray, J. C., Amlung, M. T., Palmer, A. A., & MacKillop, J. (2016). Syntax for calculation of discounting indices from the monetary choice questionnaire and probability discounting questionnaire: Syntax for MCQ and PDQ. Journal of the Experimental Analysis of Behavior, 106(2), 156–163. doi: 10.1002/jeab.221
+These methods are based on the following academic work:
+Gray, J. C., Amlung, M. T., Palmer, A. A., & MacKillop, J. (2016). Syntax for calculation of discounting indices from the monetary choice questionnaire and probability discounting questionnaire: Syntax for MCQ and PDQ. Journal of the Experimental Analysis of Behavior, 106(2), 156–163. doi: 10.1002/jeab.221
 
 The MCQ is from:
 Kirby, K. N., Petry, N. M., & Bickel, W. K. (1999). Heroin addicts have higher discount rates for delayed rewards than non-drug-using controls. Journal of Experimental Psychology: General, 128(1), 78-87. doi: 10.1037/0096-3445.128.1.78
